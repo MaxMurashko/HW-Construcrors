@@ -6,15 +6,11 @@ function Auto(mark, model, year, vin) {
 }
 
 Auto.prototype.checkVin = function() {
-    const vinChecked = this.vin.length === 16 ? true : false;
-    // console.log(vinChecked);
-    return vinChecked;
+    return vinChecked = this.vin.length === 16 ? true : false;
 }
 
 Auto.prototype.log = function() {
-    const autoLog = `${this.mark} ${this.model} ${this.year}`
-    // console.log(autoLog);
-    return autoLog;
+    return `${this.mark} ${this.model} ${this.year}`
 }
 
 
@@ -45,9 +41,7 @@ function AutoElectric(mark, model, year, vin, batteryVolume) {
 AutoElectric.prototype = Object.create(Auto.prototype)
 
 AutoElectric.prototype.showBatteryConfig = function() {
-    let batteryVolume = `${this.batteryVolume}`;
-    // console.log(batteryVolume);
-    return batteryVolume;
+    return `${this.batteryVolume}`;
 }
 
 let hyundai = new AutoFuel("Hyundai", "Coupe", 2008, "2222222222222222", "2.2", 11);
