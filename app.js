@@ -34,7 +34,6 @@ AutoFuel.prototype.showFuelConsumption = function() {
 }
 
 
-
 function AutoElectric(mark, model, year, vin, batteryVolume) {
     this.mark = mark;
     this.model = model;
