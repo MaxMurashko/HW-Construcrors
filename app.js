@@ -6,7 +6,7 @@ function Auto(mark, model, year, vin) {
 }
 
 Auto.prototype.checkVin = function() {
-    return vinChecked = this.vin.length === 16 ? true : false;
+    return this.vin.length === 16;
 }
 
 Auto.prototype.log = function() {
@@ -48,16 +48,16 @@ let hyundai = new AutoFuel("Hyundai", "Coupe", 2008, "2222222222222222", "2.2", 
 
 let tesla1 = new AutoElectric("Tesla", "Model X", 2020, "1111111111111111", "100 кВт/ч");
 
-let tesla2 = new AutoElectric("Tesla", "Model X", 2020, "1111111111111111", "120 кВт/ч")
+let tesla2 = new AutoElectric("Tesla", "Model X", 2020, "1111111111111111", "120 кВт/ч");
 
-tesla1.log()
-tesla1.checkVin()
-tesla1.showBatteryConfig()
+tesla1.log();
+tesla1.checkVin();
+tesla1.showBatteryConfig();
 
-tesla2.log()
-tesla2.checkVin()
-tesla2.showBatteryConfig()
+tesla2.log();
+tesla2.checkVin();
+tesla2.showBatteryConfig();
 
-hyundai.log()
-hyundai.checkVin()
-hyundai.showFuelConsumption()
+hyundai.log();
+hyundai.checkVin();
+hyundai.showFuelConsumption();
